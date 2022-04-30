@@ -3,7 +3,7 @@ public class Main {
 
         int balanceBefore = 100; //сумма на балансе до внесения
 
-        int summaPopolnenie = 1100; //сумма платежа
+        int summaReplenishment = 1100; //сумма пополнения
 
         int minLimit = 100; //если больше этой суммы то рассчитывется бонус
 
@@ -11,18 +11,18 @@ public class Main {
 
         int bonusSumma;
 
-        if (summaPopolnenie > minLimit) {
+        if (summaReplenishment > minLimit) {
 
-            bonusSumma = summaPopolnenie / limitBonus;
+            bonusSumma = summaReplenishment / limitBonus;
 
         } else {
 
             bonusSumma = 0;
         }
         System.out.println("Итоговая сумма :");
-        System.out.println(balanceBefore + summaPopolnenie + bonusSumma);
+        System.out.println(balanceBefore + summaReplenishment + bonusSumma);
         System.out.println("Сумма баллов :");
-        System.out.println(summaPopolnenie / limitBonus);
+        System.out.println(summaReplenishment / limitBonus);
     }
 
 }
